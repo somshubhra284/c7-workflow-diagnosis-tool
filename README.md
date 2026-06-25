@@ -5,6 +5,16 @@ Turn an analyst's plain-English workflow description into an actionable
 
 Powered by **Groq** (`llama-3.1-8b-instant`).
 
+## Deployment
+
+- **Backend** (this FastAPI app) is deployed on Render:
+  `https://c7-workflow-diagnosis-tool-swqg.onrender.com`
+- **Frontend** is a Gradio Space:
+  [`somshubhra/c7-workflow-diagnosis`](https://huggingface.co/spaces/somshubhra/c7-workflow-diagnosis).
+  The Space POSTs workflow descriptions to the backend, reading the endpoint from
+  a `BACKEND_URL` **secret** set on the Space
+  (`https://c7-workflow-diagnosis-tool-swqg.onrender.com/diagnose`).
+
 ## How it works
 
 `diagnose(workflow_description)` sends the description to the LLM with an
