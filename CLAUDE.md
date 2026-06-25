@@ -11,3 +11,6 @@
 ### While implementing
 - You should update the plan as you work.
 - After you complete tasks in the plan, you should update and append detailed descriptions of the changes you made, so following tasks can be easily hand over to other engineers.
+
+### Committing
+- Every commit MUST have a corresponding task description file under `.claude/tasks/`. Before committing, ensure the work being committed is documented in a `.claude/tasks/TASK_NAME.md` file (create or update one if needed), then include it in the commit.
