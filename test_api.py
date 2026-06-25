@@ -28,6 +28,15 @@ def test_health_returns_ok():
     assert response.json() == {"status": "ok"}
 
 
+def test_root_returns_message():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {
+        "status": "ok",
+        "message": "Workflow Diagnosis Tool API",
+    }
+
+
 # --- /diagnose -------------------------------------------------------------
 
 

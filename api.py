@@ -49,6 +49,11 @@ def health() -> dict:
     return {"status": "ok"}
 
 
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Workflow Diagnosis Tool API"}
+
+
 @app.post("/diagnose", response_model=DiagnoseResponse)
 def diagnose_endpoint(request: DiagnoseRequest) -> DiagnoseResponse:
     """Generate a first-automation diagnosis plan from a workflow description."""
