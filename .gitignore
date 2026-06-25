@@ -1,6 +1,10 @@
 # Secrets — never commit the real API key
 .env
 
+# Playwright / browser test artifacts
+.playwright-mcp/
+*.png
+
 # Python
 __pycache__/
 *.py[cod]
