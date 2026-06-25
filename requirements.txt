@@ -1,0 +1,8 @@
+# Requires Python 3.10+ (developed on 3.14.5).
+# pip cannot install Python itself — install the interpreter separately,
+# then: pip install -r requirements.txt
+groq==1.5.0
+python-dotenv==1.2.2
+fastapi==0.138.1
+uvicorn[standard]==0.49.0
+pytest==9.1.1
