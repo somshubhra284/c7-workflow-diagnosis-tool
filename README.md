@@ -5,12 +5,15 @@ Turn an analyst's plain-English workflow description into an actionable
 
 Powered by **Groq** (`llama-3.1-8b-instant`).
 
+**🚀 Live demo:** https://somshubhra-c7-workflow-diagnosis.hf.space
+
 ## Deployment
 
 - **Backend** (this FastAPI app) is deployed on Render:
   `https://c7-workflow-diagnosis-tool-swqg.onrender.com`
-- **Frontend** is a Gradio Space:
-  [`somshubhra/c7-workflow-diagnosis`](https://huggingface.co/spaces/somshubhra/c7-workflow-diagnosis).
+- **Frontend** is a Gradio Space — live at
+  https://somshubhra-c7-workflow-diagnosis.hf.space
+  ([repo](https://huggingface.co/spaces/somshubhra/c7-workflow-diagnosis)).
   The Space POSTs workflow descriptions to the backend, reading the endpoint from
   a `BACKEND_URL` **secret** set on the Space
   (`https://c7-workflow-diagnosis-tool-swqg.onrender.com/diagnose`).
